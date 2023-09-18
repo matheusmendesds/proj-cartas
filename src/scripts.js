@@ -1,4 +1,9 @@
-function jogar(){
+/* Função para gerar habilidades dos Jogadores */
+function gerar(){
+    document.getElementById('escolher').style.backgroundColor='blue'
+}
+/*Função para selecionar os jogadores do time */
+function selecionar(){
     let j = document.getElementById('jogo')
     j.style.display='block'
     var gol = document.getElementById("gol");
