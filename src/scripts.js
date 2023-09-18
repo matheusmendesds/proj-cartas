@@ -1,6 +1,6 @@
 /* Função para gerar habilidades dos Jogadores */
-function gerar(){
-    document.getElementById('escolher').style.backgroundColor='blue'
+function Jogador(nome,){
+    this.nome = nome;   
 }
 /*Função para selecionar os jogadores do time */
 function selecionar(){
@@ -15,4 +15,9 @@ function selecionar(){
     var ata = document.getElementById("ata");
     var jog4 = ata.options[ata.selectedIndex].text;
     j.innerHTML += `O seu time é formado por ${jog1}, ${jog2}, ${jog3} e ${jog4}`
+}
+
+function zoom() {
+    document.querySelectorAll('cartas').style.width = '100px'
+    
 }

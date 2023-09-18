@@ -13,7 +13,7 @@ html, body {
 header > menu > ul > li > a {
     text-decoration: none;
     color: white;
-    
+
 
 }
 
@@ -34,12 +34,13 @@ section#escolher {
 section#jogo {
     display: none;
 }
-div.cartas {
+div#cartas {
     display: flex;
     margin: auto;
     
+    
 }    
-div.cartas > p {
+div#cartas > p {
     border: 2px solid black;
     margin: 5px;
     width: 50px;
