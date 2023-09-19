@@ -1,24 +1,49 @@
+/*cores 
+#57E661 > verde claro 
+#7AFF83 > verde mais claro
+#109919 > verde escuro
+#991C4B > roxo escuro
+#E6578E > roxo claro
+*/
+:root {
+    --verdeclaro: #57E661;
+    --verde: #7AFF83;
+    --verdeescuro: #109919;
+    --roxoescuro: #991C4B;
+    --roxoclaro: #E6578E;
+}
+
 *{
     padding: 0px;
     margin: 0px;
 }
 
 html, body {
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: var(--verde);
     height: 100vh;
     width: 100vw;
 }
 
+header {
+    background-color: var(--roxoescuro);
+}
 
-header > menu > ul > li > a {
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    background-color: var(--verdeclaro);
+}
+
+ nav > ul > li > a {
     text-decoration: none;
     color: white;
-
-
+    
 }
 
 main {
-    background-color: gray;
+    background-color: var(--verde);
     height: 100vh;
     width: 50vw;
     position: relative;
