@@ -1,7 +1,10 @@
 /* Função para gerar habilidades dos Jogadores */
-function Jogador(nome,){
-    this.nome = nome;   
+function Jogador(nome,passe,chute){
+    this.nome = nome; 
+    this.passe = passe;
+    this.chute = chute;  
 }
+var um = new Jogador("João",60,80)
 /*Função para selecionar os jogadores do time */
 function selecionar(){
     let j = document.getElementById('jogo')
@@ -19,5 +22,5 @@ function selecionar(){
 
 function zoom() {
     document.querySelectorAll('cartas').style.width = '100px'
-    
+
 }
