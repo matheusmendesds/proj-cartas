@@ -18,7 +18,10 @@ html, body {
 }
 
 header {
-    background-color: var(--roxoescuro);
+    background-color: var(--verdeclaro);
+    border-bottom: 2px solid var(--verde);
+    color: white;
+    text-align: center;
 }
 
 .container {
