@@ -42,6 +42,18 @@
                 <option value="Zag2">Zag2</option>
                 <option value="Zag3">Zag3</option>
             </select></p>
+            <h3>Volantes:</h3>
+            <div id="cartas">
+                <p>Vol1</p>
+                <p>Vol2</p>
+                <p>Vol3</p>
+            </div>
+            <p>Selecione o Jogador:
+            <select name="vol" id="vol">
+                <option value="Vol1">Vol1</option>
+                <option value="Vol2">Vol2</option>
+                <option value="Vol3">Vol3</option>
+            </select></p>
             <h3>Meias:</h3>
             <div id="cartas">
                 <p>Mei1</p>
@@ -70,6 +82,26 @@
             <p><input type="button" value="Pronto" onclick="selecionar()"></p>
            
         </section>
+        <h2>Selecione uma opção:</h2>
+
+  <select id="mySelect" onchange="showData()">
+    <option value="">Selecione</option>
+    <option value="1" data-optionData='{"nome": "Objeto 1", "chute": 10}'>Opção 1</option>
+    <option value="2" data-optionData='{"nome": "Objeto 2", "valor": 20}'>Opção 2</option>
+    <option value="3" data-optionData='{"nome": "Objeto 3", "valor": 30}'>Opção 3</option>
+  </select>
+
+  <div id="dataContainer"></div>
+
+  <script>
+    function showData() {
+      var selectElement = document.getElementById("mySelect");
+      var selectedOption = selectElement.options[selectElement.selectedIndex];
+
+      var optionData = JSON.parse(selectedOption.getAttribute("data-optionData"));
+      document.getElementById("dataContainer").innerHTML = "Nome: " + optionData.nome + ", Chute: " + optionData.chute;
+    }
+  </script>
         <section id="jogo">
             <div>
                 <p>O jogo já vai começar</p>
