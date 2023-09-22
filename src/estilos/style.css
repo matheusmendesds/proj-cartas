@@ -49,6 +49,7 @@ main {
     position: relative;
     margin: auto;
     border: 5px solid var(--verdeclaro);
+    border-radius: 3px;
     padding: 10px; 
 }
 
@@ -75,3 +76,7 @@ div#cartas > p {
     
 }
 
+.con {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
